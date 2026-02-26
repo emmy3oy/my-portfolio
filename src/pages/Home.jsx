@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ParticlesBg from "../components/ParticlesBg";
 import CV from '../assets/OYASE CV.pdf';
 import IMG from '../assets/UI.png';
-import { Link } from "react-router-dom"; 
+
 
 function Home() {
   return (
@@ -52,6 +52,7 @@ function Home() {
 
               {/* BUTTONS */}
               <div className="mt-4">
+
                 <Button
                   as={Link}
                   to="/projects"
@@ -61,14 +62,15 @@ function Home() {
                   View Projects
                 </Button>
 
-                <Button
-                  variant="outline-light"
-                  href={CV}
-                  download="Emmanuel_Oyase_CV.pdf"
-                  className="px-4"
-                >
-                  Download CV
-                </Button>
+               <Button
+                variant="outline-light"
+                href={CV}
+                download="My_CV.pdf"  
+                className="px-4"
+              >
+                Download CV
+              </Button>
+
               </div>
 
               {/* SOCIAL ICONS */}
