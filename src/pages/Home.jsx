@@ -4,25 +4,21 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ParticlesBg from "../components/ParticlesBg";
 import CV from '../assets/OYASE CV.pdf';
 import IMG from '../assets/UI.png';
-
+import { Link } from "react-router-dom"; 
 
 function Home() {
   return (
-
     <div
       style={{
         minHeight: "90vh",
         display: "flex",
         alignItems: "center",
-        background:
-          "linear-gradient(135deg, #0f172a, #020617)",
+        background: "linear-gradient(135deg, #0f172a, #020617)",
         color: "white"
       }}
     >
-
       <ParticlesBg />
       <Container>
-
         <Row className="align-items-center">
 
           {/* LEFT SIDE */}
@@ -32,17 +28,13 @@ function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-
-              <p style={{ color: "#38bdf8", fontWeight: "500" }}>
-                Hello, I'm
-              </p>
+              <p style={{ color: "#38bdf8", fontWeight: "500" }}>Hello, I'm</p>
 
               <h1
                 style={{
                   fontSize: "3.2rem",
                   fontWeight: "700",
-                  background:
-                    "linear-gradient(to right,#38bdf8,#a78bfa)",
+                  background: "linear-gradient(to right,#38bdf8,#a78bfa)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent"
                 }}
@@ -50,9 +42,7 @@ function Home() {
                 Emmanuel Oyase
               </h1>
 
-              <h4 className="mb-3">
-                Front-End Developer (React)
-              </h4>
+              <h4 className="mb-3">Front-End Developer (React)</h4>
 
               <p style={{ opacity: 0.85 }}>
                 I build modern responsive web applications using React,
@@ -61,29 +51,28 @@ function Home() {
 
               {/* BUTTONS */}
               <div className="mt-4">
-
+                {/* ← Use React Router Link for client-side routing */}
                 <Button
-                  href="/projects"
+                  as={Link}
+                  to="/projects"
                   className="me-3 px-4"
                   variant="primary"
                 >
                   View Projects
                 </Button>
 
-               <Button
-                variant="outline-light"
-                href={CV}
-                download="My_CV.pdf"  
-                className="px-4"
-              >
-                Download CV
-              </Button>
-
+                <Button
+                  variant="outline-light"
+                  href={CV}
+                  download="My_CV.pdf"
+                  className="px-4"
+                >
+                  Download CV
+                </Button>
               </div>
 
               {/* SOCIAL ICONS */}
               <div className="mt-4">
-
                 <a
                   href="https://github.com/emmy3oy"
                   target="_blank"
@@ -103,36 +92,34 @@ function Home() {
                 >
                   <FaLinkedin />
                 </a>
-
               </div>
 
             </motion.div>
           </Col>
 
           {/* RIGHT SIDE */}
-        <Col md={6} className="text-center">
-          <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9 }}
-          style={{
-            backdropFilter: "blur(20px)",
-            background: "rgba(255,255,255,0.05)",
-            borderRadius: "20px",
-            padding: "20px",
-          boxShadow: "0px 10px 40px rgba(0,0,0,0.6)"
-        }}
-      >
-        <img
-          src={IMG}   // ← fixed here
-          alt="profile"
-          className="img-fluid rounded"
-        />
-        </motion.div>
-      </Col>
+          <Col md={6} className="text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9 }}
+              style={{
+                backdropFilter: "blur(20px)",
+                background: "rgba(255,255,255,0.05)",
+                borderRadius: "20px",
+                padding: "20px",
+                boxShadow: "0px 10px 40px rgba(0,0,0,0.6)"
+              }}
+            >
+              <img
+                src={IMG}
+                alt="profile"
+                className="img-fluid rounded"
+              />
+            </motion.div>
+          </Col>
 
         </Row>
-
       </Container>
     </div>
   );
