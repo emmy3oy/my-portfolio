@@ -18,6 +18,7 @@ function Home() {
       }}
     >
       <ParticlesBg />
+
       <Container>
         <Row className="align-items-center">
 
@@ -51,7 +52,6 @@ function Home() {
 
               {/* BUTTONS */}
               <div className="mt-4">
-                {/* ← Use React Router Link for client-side routing */}
                 <Button
                   as={Link}
                   to="/projects"
@@ -64,7 +64,7 @@ function Home() {
                 <Button
                   variant="outline-light"
                   href={CV}
-                  download="My_CV.pdf"
+                  download="Emmanuel_Oyase_CV.pdf"
                   className="px-4"
                 >
                   Download CV
