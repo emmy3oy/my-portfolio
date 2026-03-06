@@ -2,9 +2,11 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ParticlesBg from "../components/ParticlesBg";
-import CV from '../assets/OYASE CV.pdf';
+import CV from '../assets/EMMAN CV.pdf';
 import IMG from '../assets/UI.png';
 import { Link } from "react-router-dom"; 
+import SkillsSection from "../components/SkillsSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 function Home() {
   return (
@@ -19,7 +21,7 @@ function Home() {
     >
       <ParticlesBg />
 
-      <Container>
+      <Container fluid style={{ paddingLeft: 0, paddingRight: 150 }}>
         <Row className="align-items-center">
 
           {/* LEFT SIDE */}
@@ -118,8 +120,11 @@ function Home() {
               />
             </motion.div>
           </Col>
-
+<ProjectsSection />
+        <SkillsSection />
         </Row>
+        
+        
       </Container>
     </div>
   );

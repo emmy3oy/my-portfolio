@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Job Portal App",
-    desc: "React + Bootstrap job portal UI",
+    desc: "A modern job portal web application where users can browse, search and apply for jobs, with admin features for posting and managing listings. Built with a responsive design and smooth user interactions.",
     link: "https://job-portal-phi-six.vercel.app/"
   },
 
   {
     title: "Hair Salon",
-    desc: "Building this lovely Hair Salon landing page",
+    desc: "A sleek and modern landing page for a hair salon, showcasing services, pricing, and contact information. Fully responsive with smooth scrolling, attractive visuals, and clear calls-to-action.",
     link: "https://lnkd.in/dKmq5iB3"
   },
    {
     title: "Travelly",
-    desc: " Travel website and all it features it offer",
+    desc: "A visually appealing and responsive landing page for a travel agency, highlighting destinations, services, and packages. Features smooth scrolling, attractive imagery, and clear call-to-actions for bookings.",
     link: "https://lnkd.in/dGceCwx2"
   },
    {
