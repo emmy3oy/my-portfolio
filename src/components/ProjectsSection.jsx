@@ -11,6 +11,12 @@ const projects = [
     live: "https://job-portal-phi-six.vercel.app/",
   },
   {
+    title: "Noolu Landing Page",
+  description: "NOOLU is a modern, responsive NFT-inspired landing page built with React. It features an animated hero section, interactive team showcase with social links, smooth navigation, and a clean, visually engaging design. The project uses Framer Motion for animations and is optimized for both web and mobile users, providing a seamless experience for collectors, artists, and enthusiasts.",
+  tags: ["React", "React Bootstrap", "Responsive Design", "UI/UX Design"],
+  github: "https://github.com/emmy3oy/noolu.git", 
+  live: "https://noolu.vercel.app/"  },
+  {
     title: "Hair Salon Landing Page",
   description: "A sleek and modern landing page for a hair salon, showcasing services, pricing, and contact information. Fully responsive with smooth scrolling, attractive visuals, and clear calls-to-action.",
   tags: ["React", "React Bootstrap", "Responsive Design", "UI/UX Design"],
